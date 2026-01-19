@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Pack
+metadata:
+  name: my-awesome-pack
+  version: 1.0.0
+  description: A comprehensive demo pack showcasing agents, instructions, and prompts for productivity and automation
+  author: Ayaiay Demo Team
+  license: MIT
+  repository: https://github.com/username/my-awesome-pack
+  tags:
+    - code-review
+    - automation
+    - productivity
+    - demo
+    - best-practices
+
+spec:
+  # Agent Profiles
+  agents:
+    - name: code-reviewer
+      type: github-copilot-agent
+      description: Reviews code for best practices, security issues, and potential bugs
+      instructions: ./agents/code-reviewer.md
+      config:
+        model: gpt-4
+        temperature: 0.7
+
+    - name: task-automator
+      type: github-copilot-agent
+      description: Automates repetitive development tasks and workflows
+      instructions: ./agents/task-automator.md
+      config:
+        model: gpt-4
+        temperature: 0.5
+
+  # Instructions
+  instructions:
+    - name: review-guidelines
+      description: Comprehensive guidelines for conducting thorough code reviews
+      path: ./instructions/review-guidelines.md
+
+    - name: automation-best-practices
+      description: Best practices for task automation and workflow optimization
+      path: ./instructions/automation-best-practices.md
+
+  # Prompts
+  prompts:
+    - name: review-prompt
+      description: Template for structured code review requests
+      path: ./prompts/review-prompt.md
+      variables:
+        - language
+        - file_path
+        - code
+        - focus_areas
+
+    - name: automation-prompt
+      description: Template for task automation requests
+      path: ./prompts/automation-prompt.md
+      variables:
+        - task_description
+        - context
+        - requirements
