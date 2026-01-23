@@ -1,3 +1,17 @@
+---
+name: 'Code Reviewer Agent'
+description: 'Reviews code for best practices, security issues, and potential bugs with expert-level analysis'
+model: claude-opus-4.5
+temperature: 0.7
+max_tokens: 4096
+tools:
+  - view
+  - grep
+  - glob
+  - bash
+  - web_search
+---
+
 # Code Reviewer Agent
 
 ## Role

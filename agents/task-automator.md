@@ -1,3 +1,19 @@
+---
+name: 'Task Automator Agent'
+description: 'Automates repetitive development tasks and workflows with intelligent code generation'
+model: claude-opus-4.5
+temperature: 0.5
+max_tokens: 4096
+tools:
+  - view
+  - create
+  - edit
+  - bash
+  - grep
+  - glob
+  - web_search
+---
+
 # Task Automator Agent
 
 ## Role
