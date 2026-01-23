@@ -22,16 +22,32 @@ spec:
       description: Reviews code for best practices, security issues, and potential bugs
       instructions: ./agents/code-reviewer.md
       config:
-        model: gpt-4
+        model: claude-opus-4.5
         temperature: 0.7
+        max_tokens: 4096
+      tools:
+        - view
+        - grep
+        - glob
+        - bash
+        - web_search
 
     - name: task-automator
       type: github-copilot-agent
       description: Automates repetitive development tasks and workflows
       instructions: ./agents/task-automator.md
       config:
-        model: gpt-4
+        model: claude-opus-4.5
         temperature: 0.5
+        max_tokens: 4096
+      tools:
+        - view
+        - create
+        - edit
+        - bash
+        - grep
+        - glob
+        - web_search
 
   # Instructions
   instructions:
