@@ -38,7 +38,7 @@ Automates common development tasks:
 ## Installation
 
 ```bash
-ayaiay install username/my-awesome-pack@1.0.0
+ayaiay install username/my-awesome-pack@1.0.1
 ```
 
 ## Usage
@@ -94,6 +94,10 @@ For issues or questions:
 - Documentation: https://ayaiay.org/docs
 
 ## Changelog
+
+### Version 1.0.1
+- Updated demo with latest information from ayaiay.org documentation
+- Verified compatibility with current pack structure and specifications
 
 ### Version 1.0.0
 - Initial release
