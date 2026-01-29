@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pack
 metadata:
   name: my-awesome-pack
-  version: 1.0.1
-  description: A comprehensive demo pack showcasing agents, instructions, and prompts for productivity and automation
+  version: 1.1.0
+  description: A comprehensive demo pack showcasing agents, instructions, prompts, and skills for productivity and automation
   author: Ayaiay Demo Team
   license: MIT
   repository: https://github.com/username/my-awesome-pack
@@ -13,6 +13,7 @@ metadata:
     - productivity
     - demo
     - best-practices
+    - skills
 
 spec:
   # Agent Profiles
@@ -77,3 +78,17 @@ spec:
         - task_description
         - context
         - requirements
+
+  # Skills (GitHub Copilot Agent Skills)
+  skills:
+    - name: github-actions-debugging
+      description: Systematic guide for debugging failing GitHub Actions workflows and CI/CD issues
+      path: ./.github/skills/github-actions-debugging/SKILL.md
+      
+    - name: code-quality-enhancement
+      description: Structured methodology for improving code quality, readability, and maintainability
+      path: ./.github/skills/code-quality-enhancement/SKILL.md
+      
+    - name: security-review
+      description: Comprehensive security analysis framework for vulnerability assessment and secure coding
+      path: ./.github/skills/security-review/SKILL.md
