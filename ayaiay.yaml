@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pack
 metadata:
   name: my-awesome-pack
-  version: 1.1.0
+  version: 1.1.1
   description: A comprehensive demo pack showcasing agents, instructions, prompts, and skills for productivity and automation
   author: Ayaiay Demo Team
   license: MIT
@@ -83,12 +83,12 @@ spec:
   skills:
     - name: github-actions-debugging
       description: Systematic guide for debugging failing GitHub Actions workflows and CI/CD issues
-      path: ./.github/skills/github-actions-debugging/SKILL.md
+      path: ./skills/github-actions-debugging/SKILL.md
       
     - name: code-quality-enhancement
       description: Structured methodology for improving code quality, readability, and maintainability
-      path: ./.github/skills/code-quality-enhancement/SKILL.md
+      path: ./skills/code-quality-enhancement/SKILL.md
       
     - name: security-review
       description: Comprehensive security analysis framework for vulnerability assessment and secure coding
-      path: ./.github/skills/security-review/SKILL.md
+      path: ./skills/security-review/SKILL.md
