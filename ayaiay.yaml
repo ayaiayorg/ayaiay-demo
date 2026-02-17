@@ -79,16 +79,46 @@ spec:
         - context
         - requirements
 
+  # Skill Categories — powers the category sidebar on the pack detail page
+  skillCategories:
+    - slug: code-quality
+      label: Code Quality
+      shortLabel: Quality
+      description: Skills for improving and maintaining code quality, readability, and maintainability.
+
+    - slug: security
+      label: Security
+      description: Skills for vulnerability assessment and secure coding practices.
+
+    - slug: automation
+      label: Automation
+      description: Skills for automating development workflows and CI/CD pipelines.
+
   # Skills (GitHub Copilot Agent Skills)
   skills:
     - name: github-actions-debugging
       description: Systematic guide for debugging failing GitHub Actions workflows and CI/CD issues
+      category: automation
       path: ./skills/github-actions-debugging/SKILL.md
-      
+      tags:
+        - ci-cd
+        - github-actions
+        - debugging
+
     - name: code-quality-enhancement
       description: Structured methodology for improving code quality, readability, and maintainability
+      category: code-quality
       path: ./skills/code-quality-enhancement/SKILL.md
-      
+      tags:
+        - refactoring
+        - readability
+        - maintainability
+
     - name: security-review
       description: Comprehensive security analysis framework for vulnerability assessment and secure coding
+      category: security
       path: ./skills/security-review/SKILL.md
+      tags:
+        - security
+        - vulnerabilities
+        - owasp
